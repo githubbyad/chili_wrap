@@ -1,0 +1,156 @@
+{
+    "lastModified": "20\/12\/2023, 9:43:08 pm",
+    "code": "wrap123",
+    "general": {
+        "logo": {
+            "small": "wrap_small.jpg",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "images": [
+            "wrap_slide_001.jpg",
+            "wrap_slide_002.jpg",
+            "wrap_slide_003.jpg"
+        ],
+        "interval": "7"
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.3",
+            "color": "#1e6d01",
+            "gap": "2.5",
+            "left": "-10"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "5",
+            "color": "#1e6d01",
+            "alignment": "center",
+            "left": "0",
+            "height": "7",
+            "marginBottom": "1.5"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@20",
+                "Veg Wrap@20",
+                "Chole Wrap@20",
+                "Rice Wrap@20",
+                "Soya Wrap@30",
+                "Paneer Wrap@40"
+            ],
+            "fontSize": "2.5",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.4",
+                "between": "13"
+            },
+            "price": {
+                "color": "#99fe19",
+                "backgroundColor": "transparent",
+                "height": "3.8"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Tangy",
+                "Peri-Peri",
+                "Tandoori",
+                "Schezwan",
+                "Manchurian",
+                "Chatpata",
+                "Italian",
+                "Makhni",
+                "Tadka",
+                "BBQ"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "5.2"
+        },
+        "footer": {
+            "textRight": "*Limited Time Offer!",
+            "textLeft": "Add Cheese for <b><i>\u20b9<\/i>10<\/b>",
+            "backgroundColor": "transparent",
+            "fontSize": "1.6",
+            "color": "#99fe19",
+            "bottom": "0",
+            "height": "3",
+            "status": "block"
+        }
+    },
+    "tv3": {
+        "backgroundColor": "#1e6d01",
+        "header": {
+            "text": "Special Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "5",
+            "color": "#1e6d01",
+            "alignment": "center",
+            "left": "0",
+            "height": "7",
+            "marginBottom": "2.5"
+        },
+        "allWraps": {
+            "list": [
+                "Special Dabeli Wrap@30",
+                "Special Pizza Wrap@50"
+            ],
+            "width": "100",
+            "fontSize": "3.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "marginBottom": "1.3",
+            "gap": {
+                "line": "6.45",
+                "between": "0"
+            },
+            "price": {
+                "color": "#99fe19",
+                "backgroundColor": "transparent",
+                "height": "5.8"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Tandoori",
+                "Schezwan",
+                "Manchurian",
+                "Italian",
+                "Tangy",
+                "Chatpata",
+                "Makhni",
+                "Tadka",
+                "BBQ"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "5.4"
+        },
+        "footer": {
+            "textRight": "*Limited Time Offer!",
+            "textLeft": "Add Cheese for <b><i>\u20b9<\/i>10<\/b>",
+            "backgroundColor": "transparent",
+            "fontSize": "1.6",
+            "color": "#99fe19",
+            "bottom": "0",
+            "height": "3",
+            "status": "block"
+        },
+        "more": {
+            "text": "More Coming Soon...",
+            "bottom": "17",
+            "status": "block"
+        }
+    }
+}

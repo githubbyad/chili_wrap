@@ -1,0 +1,177 @@
+{
+    "lastModified": "17\/12\/2023, 4:07:26 pm",
+    "code": "wrap123",
+    "general": {
+        "logo": {
+            "small": "wrap_small.jpg",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "images": [
+            "wrap_slide_001.jpg",
+            "wrap_slide_002.jpg"
+        ],
+        "interval": "15"
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "10",
+                "top": "3"
+            },
+            "width": "17",
+            "text": "\u0a95\u0ac1\u0a9b \u0ab9\u0a9f\u0a95\u0ac7 \u0a96\u0abe\u0ab5\u0acb!",
+            "color": "#fff",
+            "fontSize": "4.4",
+            "backgroundColor": "#1e6d01",
+            "height": "10"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "72",
+                "top": "3"
+            },
+            "width": "16"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-30"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "center",
+            "left": "1",
+            "height": "6",
+            "marginBottom": "1"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@00",
+                "Veg Wrap@00",
+                "Chole Wrap@00",
+                "Soya Wrap@00 ",
+                "Rice Wrap@00",
+                "Paneer Wrap@00"
+            ],
+            "fontSize": "2.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#99fe19",
+                "backgroundColor": "transparent",
+                "height": "3.3"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Tandoori",
+                "Schezwan",
+                "Manchurian",
+                "Italian",
+                "Tangy",
+                "Chatpata",
+                "Makhni",
+                "Tadka",
+                "BBQ"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "5.4"
+        }
+    },
+    "tv3": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "10",
+                "top": "3"
+            },
+            "width": "17",
+            "text": "\u0a95\u0ac1\u0a9b \u0ab9\u0a9f\u0a95\u0ac7 \u0a96\u0abe\u0ab5\u0acb!",
+            "color": "#fff",
+            "fontSize": "4.4",
+            "backgroundColor": "#1e6d01",
+            "height": "10"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "72",
+                "top": "3"
+            },
+            "width": "16"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-30"
+        },
+        "header": {
+            "text": "Special Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "center",
+            "left": "1",
+            "height": "6",
+            "marginBottom": "1.5"
+        },
+        "allWraps": {
+            "list": [
+                "Special Dabeli Wrap@00",
+                "Special Pizza Wrap@00"
+            ],
+            "fontSize": "3.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "6.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#99fe19",
+                "backgroundColor": "transparent",
+                "height": "5.3"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Tandoori",
+                "Schezwan",
+                "Manchurian",
+                "Italian",
+                "Tangy",
+                "Chatpata",
+                "Makhni",
+                "Tadka",
+                "BBQ"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "5.4"
+        }
+    }
+}

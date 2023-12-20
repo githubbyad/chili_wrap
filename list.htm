@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <title>Chili Wrap | Manage All TV</title>
+    <script>
+        function createCookie(name, value, days) {
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                var expires = "; expires=" + date.toGMTString();
+            }
+            else var expires = "";
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+        function readCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+        function eraseCookie(name) {
+            createCookie(name, "", -1);
+        }
+    </script>
+</head>
+
+<body class="pb-4" style="background-color: #006736;">
+    <div id="accessDenied" class="d-none text-danger fw-bold d-flex justify-content-center align-items-center"
+        style="height: 100vh;flex-direction: column;">
+        <p class="fs-2">Access Denied!</p>
+        <div class="w-100 d-block text-center"><button class="btn btn-light" onclick="window.location.reload()">Please
+                try again</button></div>
+    </div>
+    <div class="container">
+        <script>
+            if (!readCookie("loginAccess")) {
+                document.body.style.display = "none";
+                const url = `wrapsdata.json?v=${Math.random()}`;
+                const getData = async () => {
+                    const obj = await fetch(url);
+                    const data = await obj.json();
+                    const vcode = data.code;
+
+                    const code = prompt("Enter Password:");
+                    if (code === null || code.trim() == "") {
+                        document.querySelector(".container").remove();
+                        document.querySelector("#accessDenied").classList.remove("d-none");
+                        document.body.style.display = "block";
+                    } else if (code.trim() != "" && code != null) {
+                        if (code.trim() == vcode) { // passed
+                            createCookie("loginAccess", true);
+                            document.body.style.display = "block";
+                        } else {
+                            document.querySelector(".container").remove();
+                            document.querySelector("#accessDenied").classList.remove("d-none");
+                            document.body.style.display = "block";
+                        }
+                    }
+                }
+                getData();
+            }
+        </script>
+        <div class="w-100 text-center border-bottom border-3 border-light py-3 mb-4">
+            <p class="text-center fw-bold fs-1 text-light mb-1">Manage All TV</p>
+            <img src="wrap_small.png" class="w-lg-25 w-50" alt="Wrap Image">            
+            <p class="lastChanges text-center px-0 mb-0 mt-1" style="color: rgb(153, 254, 25);">Last Modified: <span class="text-uppercase">...</span></p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div id="container">
+                    <div id="monitor">
+                        <div id="monitorscreen">
+                            <div class="tv_text text-center fw-bold fs-2 w-100">
+                                <p style="color: rgb(153, 254, 25);">TV - 1</p>
+                                <p class="mb-0">
+                                    <button class="btn btn-light" onclick="window.open('tv1.htm')"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-eye-fill me-1 " viewBox="0 0 16 16">
+                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                            <path
+                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                        </svg>Preview</button>
+                                    <button class="btn btn-primary px-4"
+                                        onclick="window.open('tv1_form.php','_self')"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-pencil-square me-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                                        </svg>Edit</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div id="container">
+                    <div id="monitor">
+                        <div id="monitorscreen">
+                            <div class="tv_text text-center fw-bold fs-2 w-100">
+                                <p style="color: rgb(153, 254, 25);">TV - 2</p>
+                                <p class="mb-0">
+                                    <button class="btn btn-light" onclick="window.open('tv2.htm')"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-eye-fill me-1 " viewBox="0 0 16 16">
+                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                            <path
+                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                        </svg>Preview</button>
+                                    <button class="btn btn-primary px-4"
+                                        onclick="window.open('tv2_form.php','_self')"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-pencil-square me-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                                        </svg>Edit</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div id="container">
+                    <div id="monitor">
+                        <div id="monitorscreen">
+                            <div class="tv_text text-center fw-bold fs-2 w-100">
+                                <p style="color: rgb(153, 254, 25);">TV - 3</p>
+                                <p class="mb-0">
+                                    <button class="btn btn-light" onclick="window.open('tv3.htm')"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-eye-fill me-1 " viewBox="0 0 16 16">
+                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                            <path
+                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                        </svg>Preview</button>
+                                    <button class="btn btn-primary px-4"
+                                        onclick="window.open('tv3_form.php','_self')"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-pencil-square me-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                                        </svg>Edit</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const url = `wrapsdata.json?v=${Math.random()}`;
+        const getData = async () => {
+            const obj = await fetch(url);
+            const data = await obj.json();
+            lastModified = data.lastModified;
+            let tv = data.tv3;
+
+            // last modifed
+            document.querySelector(".lastChanges span").innerText = data.lastModified;
+        };
+        getData()
+    </script>
+
+    <style>
+        body {
+            background-color: #222;
+        }
+
+        #container {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        @media screen and (min-width: 992px) {
+            .w-lg-25 {
+                width: 25% !important;
+            }
+        }
+
+        #monitor {
+            background: #000;
+            position: relative;
+            border-top: 3px solid #888;
+            margin: 5%;
+            padding: 2% 2% 4% 2%;
+            border-radius: 10px;
+            border-bottom-left-radius: 50% 2%;
+            border-bottom-right-radius: 50% 2%;
+            transition: margin-right 1s;
+        }
+
+        #monitor:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 3%;
+            left: 36%;
+            height: .5%;
+            width: 28%;
+            background: #ddd;
+            border-radius: 50%;
+            box-shadow: 0 0 3px 0 white;
+        }
+
+        #monitorscreen {
+            position: relative;
+            background-color: rgb(30, 109, 1);
+            background-size: cover;
+            background-position: top center;
+            height: 0;
+            padding-bottom: 56.25%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tv_text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media all and (min-width: 960px) {
+            #monitor {
+                -webkit-animation: tvflicker .2s infinite alternate;
+                -moz-animation: tvflicker .5s infinite alternate;
+                -o-animation: tvflicker .5s infinite alternate;
+                animation: tvflicker .5s infinite alternate;
+            }
+
+            @-webkit-keyframes tvflicker {
+                0% {
+                    box-shadow: 0 0 100px 0 rgba(200, 235, 255, 0.4);
+                }
+
+                100% {
+                    box-shadow: 0 0 95px 0 rgba(200, 230, 255, 0.45);
+                }
+            }
+
+            @-moz-keyframes tvflicker {
+                0% {
+                    box-shadow: 0 0 100px 0 rgba(225, 235, 255, 0.4);
+                }
+
+                100% {
+                    box-shadow: 0 0 60px 0 rgba(200, 220, 255, 0.6);
+                }
+            }
+
+            @-o-keyframes tvflicker {
+                0% {
+                    box-shadow: 0 0 100px 0 rgba(225, 235, 255, 0.4);
+                }
+
+                100% {
+                    box-shadow: 0 0 60px 0 rgba(200, 220, 255, 0.6);
+                }
+            }
+
+            @keyframes tvflicker {
+                0% {
+                    box-shadow: 0 0 100px 0 rgba(225, 235, 255, 0.4);
+                }
+
+                100% {
+                    box-shadow: 0 0 60px 0 rgba(200, 220, 255, 0.6);
+                }
+            }
+        }
+    </style>
+</body>
+
+</html>

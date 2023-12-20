@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <title>TV - 2</title>
+</head>
+
+<body class="pb-5" style="transition: 300ms ease;">
+
+    <div class="veg-div">
+        <div class="veg-icon">
+            <div class="veg-circle"></div>
+        </div>
+        <div class="veg-text ms-1 fw-bold">100% PURE VEG</div>
+    </div>
+
+    <h1 class="header fw-bold"></h1>
+    <div class="footer fw-normal text-start position-fixed px-4">
+        <right></right>
+        <left></left>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="allWraps col-5 d-flex justify-conent-start">
+                <ul class="list-group fw-bold"></ul>
+            </div>
+            <div
+                class="selectSouces col-2 fw-bold d-flex align-items-center justify-content-center invisible position-relative">
+                <span class="d-inline-block text-center position-absolute p-2"
+                    style="background-color: #99fe19;"></span>
+            </div>
+            <div class="allSouces col-5 d-flex justify-content-end">
+                <ul class="fw-bold text-center" style="column-count: 2;list-style:none;border-radius: 20px;"></ul>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        const url = `wrapsdata.json?v=${Math.random()}`;
+        let lastModified = 0;
+        const getData = async () => {
+            const obj = await fetch(url);
+            const data = await obj.json();
+            lastModified = data.lastModified;
+            let tv = data.tv2;
+
+            // background color
+            document.body.style.backgroundColor = tv.backgroundColor;
+
+            // header
+            document.querySelector(".header").innerHTML = `${tv.header.text}`;
+            document.querySelector(".header").style.fontSize = `${tv.header.fontSize}rem`;
+            document.querySelector(".header").style.lineHeight = `${tv.header.height}rem`;
+            document.querySelector(".header").style.color = tv.header.color;
+            document.querySelector(".header").style.textAlign = tv.header.alignment;
+            document.querySelector(".header").style.paddingLeft = `${tv.header.left}rem`;
+            document.querySelector(".header").style.backgroundColor = tv.header.backgroundColor;
+            document.querySelector(".header").style.marginBottom = `${tv.header.marginBottom}rem`;
+
+            // pure-veg
+            document.querySelector(".veg-div").style.top = `${document.querySelector(".header").offsetHeight - document.querySelector(".veg-div").offsetHeight}px`;
+            document.querySelector(".veg-div").style.color = tv.header.color;
+            document.querySelector(".veg-icon").style.borderColor = tv.header.color;
+            document.querySelector(".veg-circle").style.backgroundColor = tv.header.color;
+
+            // footer
+            document.querySelector(".footer right").innerHTML = `${tv.footer.textRight}`;
+            document.querySelector(".footer left").innerHTML = `${tv.footer.textLeft}`;
+            document.querySelector(".footer left").style.backgroundColor = tv.header.backgroundColor;
+            document.querySelector(".footer left").style.color = `${tv.header.color}`;
+            document.querySelector(".footer").style.fontSize = `${tv.footer.fontSize}rem`;
+            document.querySelector(".footer").style.borderBottomColor = tv.header.backgroundColor;
+            document.querySelector(".footer").style.lineHeight = `${tv.footer.height}rem`;
+            document.querySelector(".footer").style.color = tv.footer.color;
+            document.querySelector(".footer").style.backgroundColor = tv.footer.backgroundColor;
+            document.querySelector(".footer").style.bottom = `${tv.footer.bottom}rem`;
+            document.querySelector(".footer").style.display = tv.footer.status;
+
+            // all wraps
+            let allWrapLI = "";
+            tv.allWraps.list.forEach(w => {
+                if (w.trim() != "") {
+                    w.includes('--')
+                        ?
+                        (allWrapLI += `<li data-status="disabled" data-wrap="${w}">${w.split("@")[0].split("--")[1]}<b><i>₹</i>${w.split("@")[1]}</b></li>`)
+                        :
+                        (allWrapLI += `<li data-wrap="${w}">${w.split("@")[0]}<b><i>₹</i>${w.split("@")[1]}</b></li>`);
+                }
+            });
+            document.querySelector(".allWraps ul").innerHTML = allWrapLI;
+            document.querySelector(".allWraps ul").style.fontSize = `${tv.allWraps.fontSize}rem`;
+            document.querySelector(".allWraps ul").style.color = tv.allWraps.color;
+            document.querySelectorAll(".allWraps ul li").forEach(p => p.style.backgroundColor = tv.allWraps.backgroundColor);
+            document.querySelectorAll(".allWraps ul li b").forEach(b => b.style.color = tv.allWraps.price.color);
+            document.querySelectorAll(".allWraps ul li b").forEach(b => b.style.lineHeight = `${tv.allWraps.price.height}rem`);
+            document.querySelectorAll(".allWraps ul li b").forEach(b => b.style.backgroundColor = tv.allWraps.price.backgroundColor);
+            document.querySelector(".allWraps ul").style.lineHeight = `${tv.allWraps.gap.line}rem`;
+            document.querySelectorAll(".allWraps ul li").forEach(p => p.style.paddingRight = `${tv.allWraps.gap.between}rem`);
+
+            // select souce text
+            document.querySelector(".selectSouces span").innerHTML = `${tv.selectSouce.text}`;
+            document.querySelector(".selectSouces").classList.remove("invisible");
+            document.querySelector(".selectSouces").style.fontSize = `${tv.selectSouce.fontSize}rem`;
+            document.querySelector(".selectSouces").style.color = tv.selectSouce.color;
+            document.querySelector(".selectSouces").style.lineHeight = `${tv.selectSouce.gap}rem`;
+            document.querySelector(".selectSouces span").style.left = `${tv.selectSouce.left}%`;
+
+            // all souces
+            let allSouceLI = "";
+            tv.allSouces.list.forEach(w => {
+                if (w.trim() != "") {
+                    w.includes('--')
+                        ?
+                        (allSouceLI += `<li data-status="disabled">${w.split("--")[1]}</li>`)
+                        :
+                        (allSouceLI += `<li>${w}</li>`);
+                }
+            });
+            document.querySelector(".allSouces ul").innerHTML = allSouceLI;
+            document.querySelector(".allSouces ul").style.fontSize = `${tv.allSouces.fontSize}rem`;
+            document.querySelector(".allSouces ul").style.color = tv.allSouces.color;
+            document.querySelector(".allSouces ul").style.padding = `${tv.allSouces.padding}rem`;
+            document.querySelector(".allSouces ul").style.backgroundColor = tv.allSouces.backgroundColor;
+            document.querySelector(".allSouces ul").style.lineHeight = `${tv.allSouces.gap}rem`;
+        };
+        getData();
+
+        // refresh page when making any changes
+        const getVersion = async () => {
+            const obj = await fetch(url);
+            const data = await obj.json();
+            lastModified != data.lastModified && getData();
+        }
+        setInterval(getVersion, 1000);
+
+        // full screen
+        const docElm = document.documentElement;
+
+        const fullScreen = () => {
+            if (docElm.mozRequestFullScreen) { /* firefox */
+                docElm.mozRequestFullScreen();
+            } else if (docElm.requestFullscreen) { /* chrome*/
+                docElm.requestFullscreen();
+            }
+        }
+
+        window.addEventListener("click", fullScreen);
+    </script>
+    <style>
+        * {
+            user-select: none;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: #093a1c;
+            font-family: 'Jost', sans-serif !important;
+        }
+
+        .selectSouces span::after {
+            content: " ";
+            position: absolute;
+            border-bottom: 20px solid transparent;
+            left: 100%;
+            border-top: 20px solid transparent;
+            border-left: 20px solid #99fe19;
+            border-right: 20px solid transparent;
+            border-width: 100px;
+            border-left-width: 50px !important;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .logo,
+        .top_img {
+            width: 10%;
+            position: fixed;
+            left: 55%;
+            top: 3%;
+        }
+
+        .allWraps ul li {
+            position: relative;
+            padding-right: 9rem;
+            border-radius: 20px;
+            padding-left: 1rem;
+            margin-bottom: 0.65rem;
+            display: flex;
+            flex-direction: column;
+
+            & b {
+                position: absolute;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                right: 0.5rem;
+                border-radius: 12px;
+                top: 0.5rem;
+                line-height: 3.3rem;
+                transform: scale(1.4);
+
+                & i {
+                    font-style: normal;
+                    font-size: 65%;
+                    position: absolute;
+                    left: -4%;
+                    top: -5%;
+                }
+            }
+        }
+
+        .footer {
+            left: 0%;
+            width: 100%;
+            border-bottom: 3px solid transparent;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            & left {
+                float: left;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+
+                & b {
+                    transform: scale(1.3);
+                    position: relative;
+                    margin-left: 1rem;
+                    display: inline-block;
+                }
+
+                & i {
+                    font-style: normal;
+                    font-size: 66%;
+                    position: absolute;
+                    top: -5%;
+                    left: -34%;
+                }
+            }
+
+            & right {
+                float: right;
+            }
+        }
+
+        .allWraps ul li[data-status="disabled"] {
+            opacity: 0.3;
+            text-decoration: line-through;
+            order: 1;
+        }
+
+        .allSouces ul li[data-status="disabled"] {
+            opacity: 0.3;
+            text-decoration: line-through;
+        }
+
+        .veg-div {
+            position: fixed;
+            right: 2rem;
+            top: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: -0.5rem;
+            color: transparent;
+
+            & .veg-icon {
+                position: relative;
+                border: 2px solid transparent;
+                width: 20px;
+                height: 20px;
+
+                & .veg-circle {
+                    position: absolute;
+                    background: transparent;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50px;
+                    left: 3px;
+                    top: 3px;
+                }
+            }
+        }
+        
+    </style>
+</body>
+
+</html>

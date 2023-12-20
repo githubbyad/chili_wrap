@@ -1,0 +1,1376 @@
+
+
+
+
+************************ 2023-12-16 09:05:32pm************************
+
+
+
+{
+    "lastModified": "17\/12\/2023, 12:37:13 am",
+    "code": "wrap123",
+    "snow": "Yes",
+    "general": {
+        "logo": {
+            "small": "wrap_small.png",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "backgroundColor": "#feda79",
+        "header": {
+            "text": "LETS <b>WRAP<\/b> IT UP FOR TODAY?",
+            "fontSize": "5",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        },
+        "image": {
+            "url": "wrap_001.png",
+            "width": "45",
+            "position": {
+                "left": "28",
+                "top": "30"
+            }
+        },
+        "footer": {
+            "text": "Order our <b>Chili Wrap<\/b> and call it a day.",
+            "fontSize": "3",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        }
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "30",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "50",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-40"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "left",
+            "left": "1"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@00",
+                "Pizza Wrap@00",
+                "Veg Wrap@00",
+                "Chole Wrap@00",
+                "Pulao Wrap@00",
+                "Soya Wrap@00"
+            ],
+            "fontSize": "2.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#174a04",
+                "backgroundColor": "#99fe19"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Pizza",
+                "Mustard",
+                "Mint",
+                "Thai",
+                "Suhezwan",
+                "Mayo",
+                "Makhni",
+                "Manchurian",
+                "Tandoori",
+                "Garlic",
+                "Tangy",
+                "BBQ",
+                "Biriyani",
+                "Salsa",
+                "Bhoot"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "3.4"
+        }
+    }
+}
+
+
+
+************************ 2023-12-16 09:05:52pm ************************
+
+
+
+{
+    "lastModified": "17\/12\/2023, 12:37:13 am",
+    "code": "wrap123",
+    "snow": "Yes",
+    "general": {
+        "logo": {
+            "small": "wrap_small.png",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "backgroundColor": "#feda79",
+        "header": {
+            "text": "LETS <b>WRAP<\/b> IT UP FOR TODAY?",
+            "fontSize": "5",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        },
+        "image": {
+            "url": "wrap_001.png",
+            "width": "45",
+            "position": {
+                "left": "28",
+                "top": "30"
+            }
+        },
+        "footer": {
+            "text": "Order our <b>Chili Wrap<\/b> and call it a day.",
+            "fontSize": "3",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        }
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "30",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "50",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-40"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "left",
+            "left": "1"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@00",
+                "Pizza Wrap@00",
+                "Veg Wrap@00",
+                "Chole Wrap@00",
+                "Pulao Wrap@00",
+                "Soya Wrap@00"
+            ],
+            "fontSize": "2.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#174a04",
+                "backgroundColor": "#99fe19"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Pizza",
+                "Mustard",
+                "Mint",
+                "Thai",
+                "Suhezwan",
+                "Mayo",
+                "Makhni",
+                "Manchurian",
+                "Tandoori",
+                "Garlic",
+                "Tangy",
+                "BBQ",
+                "Biriyani",
+                "Salsa",
+                "Bhoot"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "3.4"
+        }
+    }
+}
+
+
+
+************************ 2023-12-16 09:06:09pm ************************
+
+
+
+{
+    "lastModified": "17\/12\/2023, 12:37:13 am",
+    "code": "wrap123",
+    "snow": "Yes",
+    "general": {
+        "logo": {
+            "small": "wrap_small.png",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "backgroundColor": "#feda79",
+        "header": {
+            "text": "LETS <b>WRAP<\/b> IT UP FOR TODAY?",
+            "fontSize": "5",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        },
+        "image": {
+            "url": "wrap_001.png",
+            "width": "45",
+            "position": {
+                "left": "28",
+                "top": "30"
+            }
+        },
+        "footer": {
+            "text": "Order our <b>Chili Wrap<\/b> and call it a day.",
+            "fontSize": "3",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        }
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "30",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "50",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-40"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "left",
+            "left": "1"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@00",
+                "Pizza Wrap@00",
+                "Veg Wrap@00",
+                "Chole Wrap@00",
+                "Pulao Wrap@00",
+                "Soya Wrap@00"
+            ],
+            "fontSize": "2.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#174a04",
+                "backgroundColor": "#99fe19"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Pizza",
+                "Mustard",
+                "Mint",
+                "Thai",
+                "Suhezwan",
+                "Mayo",
+                "Makhni",
+                "Manchurian",
+                "Tandoori",
+                "Garlic",
+                "Tangy",
+                "BBQ",
+                "Biriyani",
+                "Salsa",
+                "Bhoot"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "3.4"
+        }
+    }
+}
+
+
+
+************************ 2023-12-16 09:06:26pm ************************
+
+
+
+{
+    "lastModified": "17\/12\/2023, 12:37:13 am",
+    "code": "wrap123",
+    "snow": "Yes",
+    "general": {
+        "logo": {
+            "small": "wrap_small.png",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "backgroundColor": "#feda79",
+        "header": {
+            "text": "LETS <b>WRAP<\/b> IT UP FOR TODAY?",
+            "fontSize": "5",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        },
+        "image": {
+            "url": "wrap_001.png",
+            "width": "45",
+            "position": {
+                "left": "28",
+                "top": "30"
+            }
+        },
+        "footer": {
+            "text": "Order our <b>Chili Wrap<\/b> and call it a day.",
+            "fontSize": "3",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        }
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "30",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "50",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-40"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "left",
+            "left": "1"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@00",
+                "Pizza Wrap@00",
+                "Veg Wrap@00",
+                "Chole Wrap@00",
+                "Pulao Wrap@00",
+                "Soya Wrap@00"
+            ],
+            "fontSize": "2.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#174a04",
+                "backgroundColor": "#99fe19"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Pizza",
+                "Mustard",
+                "Mint",
+                "Thai",
+                "Suhezwan",
+                "Mayo",
+                "Makhni",
+                "Manchurian",
+                "Tandoori",
+                "Garlic",
+                "Tangy",
+                "BBQ",
+                "Biriyani",
+                "Salsa",
+                "Bhoot"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "3.4"
+        }
+    }
+}
+
+
+
+************************ 2023-12-16 09:06:45pm ************************
+
+
+
+{
+    "lastModified": "17\/12\/2023, 12:37:13 am",
+    "code": "wrap123",
+    "snow": "Yes",
+    "general": {
+        "logo": {
+            "small": "wrap_small.png",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "backgroundColor": "#feda79",
+        "header": {
+            "text": "LETS <b>WRAP<\/b> IT UP FOR TODAY?",
+            "fontSize": "5",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        },
+        "image": {
+            "url": "wrap_001.png",
+            "width": "45",
+            "position": {
+                "left": "28",
+                "top": "30"
+            }
+        },
+        "footer": {
+            "text": "Order our <b>Chili Wrap<\/b> and call it a day.",
+            "fontSize": "3",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        }
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "30",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "50",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-40"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "left",
+            "left": "1"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@00",
+                "Pizza Wrap@00",
+                "Veg Wrap@00",
+                "Chole Wrap@00",
+                "Pulao Wrap@00",
+                "Soya Wrap@00"
+            ],
+            "fontSize": "2.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#174a04",
+                "backgroundColor": "#99fe19"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Pizza",
+                "Mustard",
+                "Mint",
+                "Thai",
+                "Suhezwan",
+                "Mayo",
+                "Makhni",
+                "Manchurian",
+                "Tandoori",
+                "Garlic",
+                "Tangy",
+                "BBQ",
+                "Biriyani",
+                "Salsa",
+                "Bhoot"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "3.4"
+        }
+    }
+}
+
+
+
+************************ 2023-12-16 09:06:47pm ************************
+
+
+
+{
+    "lastModified": "17\/12\/2023, 12:37:13 am",
+    "code": "wrap123",
+    "snow": "Yes",
+    "general": {
+        "logo": {
+            "small": "wrap_small.png",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "backgroundColor": "#feda79",
+        "header": {
+            "text": "LETS <b>WRAP<\/b> IT UP FOR TODAY?",
+            "fontSize": "5",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        },
+        "image": {
+            "url": "wrap_001.png",
+            "width": "45",
+            "position": {
+                "left": "28",
+                "top": "30"
+            }
+        },
+        "footer": {
+            "text": "Order our <b>Chili Wrap<\/b> and call it a day.",
+            "fontSize": "3",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        }
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "30",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "50",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-40"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "left",
+            "left": "1"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@00",
+                "Pizza Wrap@00",
+                "Veg Wrap@00",
+                "Chole Wrap@00",
+                "Pulao Wrap@00",
+                "Soya Wrap@00"
+            ],
+            "fontSize": "2.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#174a04",
+                "backgroundColor": "#99fe19"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Pizza",
+                "Mustard",
+                "Mint",
+                "Thai",
+                "Suhezwan",
+                "Mayo",
+                "Makhni",
+                "Manchurian",
+                "Tandoori",
+                "Garlic",
+                "Tangy",
+                "BBQ",
+                "Biriyani",
+                "Salsa",
+                "Bhoot"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "3.4"
+        }
+    }
+}
+
+
+
+************************ 2023-12-16 09:06:49pm ************************
+
+
+
+{
+    "lastModified": "17\/12\/2023, 12:37:13 am",
+    "code": "wrap123",
+    "snow": "Yes",
+    "general": {
+        "logo": {
+            "small": "wrap_small.png",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "backgroundColor": "#feda79",
+        "header": {
+            "text": "LETS <b>WRAP<\/b> IT UP FOR TODAY?",
+            "fontSize": "5",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        },
+        "image": {
+            "url": "wrap_001.png",
+            "width": "45",
+            "position": {
+                "left": "28",
+                "top": "30"
+            }
+        },
+        "footer": {
+            "text": "Order our <b>Chili Wrap<\/b> and call it a day.",
+            "fontSize": "3",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        }
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "30",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "50",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-40"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "left",
+            "left": "1"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@00",
+                "Pizza Wrap@00",
+                "Veg Wrap@00",
+                "Chole Wrap@00",
+                "Pulao Wrap@00",
+                "Soya Wrap@00"
+            ],
+            "fontSize": "2.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#174a04",
+                "backgroundColor": "#99fe19"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Pizza",
+                "Mustard",
+                "Mint",
+                "Thai",
+                "Suhezwan",
+                "Mayo",
+                "Makhni",
+                "Manchurian",
+                "Tandoori",
+                "Garlic",
+                "Tangy",
+                "BBQ",
+                "Biriyani",
+                "Salsa",
+                "Bhoot"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "3.4"
+        }
+    }
+}
+
+
+
+************************ 2023-12-16 09:06:50pm ************************
+
+
+
+{
+    "lastModified": "17\/12\/2023, 12:37:13 am",
+    "code": "wrap123",
+    "snow": "Yes",
+    "general": {
+        "logo": {
+            "small": "wrap_small.png",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "backgroundColor": "#feda79",
+        "header": {
+            "text": "LETS <b>WRAP<\/b> IT UP FOR TODAY?",
+            "fontSize": "5",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        },
+        "image": {
+            "url": "wrap_001.png",
+            "width": "45",
+            "position": {
+                "left": "28",
+                "top": "30"
+            }
+        },
+        "footer": {
+            "text": "Order our <b>Chili Wrap<\/b> and call it a day.",
+            "fontSize": "3",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        }
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "30",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "50",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-40"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "left",
+            "left": "1"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@00",
+                "Pizza Wrap@00",
+                "Veg Wrap@00",
+                "Chole Wrap@00",
+                "Pulao Wrap@00",
+                "Soya Wrap@00"
+            ],
+            "fontSize": "2.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#174a04",
+                "backgroundColor": "#99fe19"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Pizza",
+                "Mustard",
+                "Mint",
+                "Thai",
+                "Suhezwan",
+                "Mayo",
+                "Makhni",
+                "Manchurian",
+                "Tandoori",
+                "Garlic",
+                "Tangy",
+                "BBQ",
+                "Biriyani",
+                "Salsa",
+                "Bhoot"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "3.4"
+        }
+    }
+}
+
+
+
+************************ 2023-12-16 09:06:52pm ************************
+
+
+
+{
+    "lastModified": "17\/12\/2023, 12:37:13 am",
+    "code": "wrap123",
+    "snow": "Yes",
+    "general": {
+        "logo": {
+            "small": "wrap_small.png",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "backgroundColor": "#feda79",
+        "header": {
+            "text": "LETS <b>WRAP<\/b> IT UP FOR TODAY?",
+            "fontSize": "5",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        },
+        "image": {
+            "url": "wrap_001.png",
+            "width": "45",
+            "position": {
+                "left": "28",
+                "top": "30"
+            }
+        },
+        "footer": {
+            "text": "Order our <b>Chili Wrap<\/b> and call it a day.",
+            "fontSize": "3",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        }
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "30",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "50",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-40"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "left",
+            "left": "1"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@00",
+                "Pizza Wrap@00",
+                "Veg Wrap@00",
+                "Chole Wrap@00",
+                "Pulao Wrap@00",
+                "Soya Wrap@00"
+            ],
+            "fontSize": "2.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#174a04",
+                "backgroundColor": "#99fe19"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Pizza",
+                "Mustard",
+                "Mint",
+                "Thai",
+                "Suhezwan",
+                "Mayo",
+                "Makhni",
+                "Manchurian",
+                "Tandoori",
+                "Garlic",
+                "Tangy",
+                "BBQ",
+                "Biriyani",
+                "Salsa",
+                "Bhoot"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "3.4"
+        }
+    }
+}
+
+
+
+************************ 2023-12-16 09:06:54pm ************************
+
+
+
+{
+    "lastModified": "17\/12\/2023, 12:37:13 am",
+    "code": "wrap123",
+    "snow": "Yes",
+    "general": {
+        "logo": {
+            "small": "wrap_small.png",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "backgroundColor": "#feda79",
+        "header": {
+            "text": "LETS <b>WRAP<\/b> IT UP FOR TODAY?",
+            "fontSize": "5",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        },
+        "image": {
+            "url": "wrap_001.png",
+            "width": "45",
+            "position": {
+                "left": "28",
+                "top": "30"
+            }
+        },
+        "footer": {
+            "text": "Order our <b>Chili Wrap<\/b> and call it a day.",
+            "fontSize": "3",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        }
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "30",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "50",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-40"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "left",
+            "left": "1"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@00",
+                "Pizza Wrap@00",
+                "Veg Wrap@00",
+                "Chole Wrap@00",
+                "Pulao Wrap@00",
+                "Soya Wrap@00"
+            ],
+            "fontSize": "2.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#174a04",
+                "backgroundColor": "#99fe19"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Pizza",
+                "Mustard",
+                "Mint",
+                "Thai",
+                "Suhezwan",
+                "Mayo",
+                "Makhni",
+                "Manchurian",
+                "Tandoori",
+                "Garlic",
+                "Tangy",
+                "BBQ",
+                "Biriyani",
+                "Salsa",
+                "Bhoot"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "3.4"
+        }
+    }
+}
+
+
+
+************************ 2023-12-16 09:06:55pm ************************
+
+
+
+{
+    "lastModified": "17\/12\/2023, 12:37:13 am",
+    "code": "wrap123",
+    "snow": "Yes",
+    "general": {
+        "logo": {
+            "small": "wrap_small.png",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "backgroundColor": "#feda79",
+        "header": {
+            "text": "LETS <b>WRAP<\/b> IT UP FOR TODAY?",
+            "fontSize": "5",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        },
+        "image": {
+            "url": "wrap_001.png",
+            "width": "45",
+            "position": {
+                "left": "28",
+                "top": "30"
+            }
+        },
+        "footer": {
+            "text": "Order our <b>Chili Wrap<\/b> and call it a day.",
+            "fontSize": "3",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        }
+    },
+    "tv2": {
+        "backgroundColor": "#1e6d01",
+        "logo": {
+            "url": "wrap_small.png",
+            "position": {
+                "left": "30",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "topImage": {
+            "url": "wrap_001.png",
+            "position": {
+                "left": "50",
+                "top": "2"
+            },
+            "width": "17"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#1e6d01",
+            "gap": "3",
+            "left": "-40"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#99fe19",
+            "fontSize": "4",
+            "color": "#1e6d01",
+            "alignment": "left",
+            "left": "1"
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@00",
+                "Pizza Wrap@00",
+                "Veg Wrap@00",
+                "Chole Wrap@00",
+                "Pulao Wrap@00",
+                "Soya Wrap@00"
+            ],
+            "fontSize": "2.4",
+            "color": "#fff",
+            "backgroundColor": "#174a04",
+            "gap": {
+                "line": "4.45",
+                "between": "12"
+            },
+            "price": {
+                "color": "#174a04",
+                "backgroundColor": "#99fe19"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Pizza",
+                "Mustard",
+                "Mint",
+                "Thai",
+                "Suhezwan",
+                "Mayo",
+                "Makhni",
+                "Manchurian",
+                "Tandoori",
+                "Garlic",
+                "Tangy",
+                "BBQ",
+                "Biriyani",
+                "Salsa",
+                "Bhoot"
+            ],
+            "fontSize": "2.4",
+            "color": "#99fe19",
+            "padding": "1.5",
+            "backgroundColor": "#174a04",
+            "gap": "3.4"
+        }
+    }
+}

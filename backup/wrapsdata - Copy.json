@@ -1,0 +1,102 @@
+{
+    "lastModified": "16\/12\/2023, 10:23:23 pm",
+    "code": "wrap123",
+    "snow": "Yes",
+    "general": {
+        "logo": {
+            "small": "wrap_small.png",
+            "big": "bigLogoWithText"
+        }
+    },
+    "tv1": {
+        "backgroundColor": "#feda79",
+        "header": {
+            "text": "LETS <b>WRAP<\/b> IT UP FOR TODAY?",
+            "fontSize": "5",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        },
+        "image": {
+            "url": "wrap_001.png",
+            "width": "45",
+            "position": {
+                "left": "28",
+                "top": "30"
+            }
+        },
+        "footer": {
+            "text": "Order our <b>Chili Wrap<\/b> and call it a day.",
+            "fontSize": "3",
+            "color": {
+                "main": "#000",
+                "highlight": "#da1b28"
+            }
+        }
+    },
+    "tv2": {
+        "backgroundColor": "#093a1c",
+        "logo": {
+            "position": {
+                "left": "46",
+                "top": "3"
+            },
+            "width": "10"
+        },
+        "selectSouce": {
+            "text": "SELECT<br>FLAVOUR",
+            "fontSize": "2.5",
+            "color": "#ee1927",
+            "gap": "3",
+            "left": "-30"
+        },
+        "header": {
+            "text": "Wraps",
+            "backgroundColor": "#062914",
+            "fontSize": "4",
+            "color": "#fff",
+            "price": "000",
+            "dots": ".............."
+        },
+        "allWraps": {
+            "list": [
+                "Aloo Wrap@000",
+                "Pizza Wrap@000",
+                "Veg Wrap@000",
+                "Chole Wrap@000",
+                "Pulao Wrap@000",
+                "Soya Wrap@000"
+            ],
+            "fontSize": "2.8",
+            "color": "#fff",
+            "gap": {
+                "line": "4.9",
+                "between": "9"
+            }
+        },
+        "allSouces": {
+            "list": [
+                "Peri-Peri",
+                "Pizza",
+                "Mustard",
+                "Mint",
+                "Thai",
+                "Suhezwan",
+                "Mayo",
+                "Makhni",
+                "Manchurian",
+                "Tandoori",
+                "Garlic",
+                "Tangy",
+                "BBQ",
+                "Biriyani",
+                "Salsa",
+                "Bhoot"
+            ],
+            "fontSize": "2.5",
+            "color": "#f6e300",
+            "gap": "3.7"
+        }
+    }
+}
