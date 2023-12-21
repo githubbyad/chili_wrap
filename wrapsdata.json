@@ -1,5 +1,5 @@
 {
-    "lastModified": "21\/12\/2023, 1:01:30 pm",
+    "lastModified": "21\/12\/2023, 10:56:19 pm",
     "code": "wrap123",
     "general": {
         "logo": {
@@ -79,7 +79,7 @@
             "textRight": "",
             "textLeft": "Extra Cheese <b><i>\u20b9<\/i>10<\/b>",
             "backgroundColor": "transparent",
-            "fontSize": "1.6",
+            "fontSize": "2",
             "color": "#99fe19",
             "bottom": "0",
             "height": "3",
