@@ -37,7 +37,7 @@
                     style="background-color: #99fe19;"></span>
             </div>
             <div class="allSouces col-5 d-flex justify-content-end">
-                <ul class="fw-bold text-center" style="column-count: 2;list-style:none;border-radius: 20px;"></ul>
+                <ul class="fw-bold text-start" style="column-count: 2;list-style:none;border-radius: 20px;"></ul>
             </div>
         </div>
     </div>
@@ -65,7 +65,7 @@
             document.querySelector(".header").style.marginBottom = `${tv.header.marginBottom}rem`;
 
             // pure-veg
-            document.querySelector(".veg-div").style.top = `${document.querySelector(".header").offsetHeight - document.querySelector(".veg-div").offsetHeight}px`;
+            document.querySelector(".veg-div").style.top = `${document.querySelector(".header").offsetHeight/2 - document.querySelector(".veg-div").offsetHeight/3}px`;
             document.querySelector(".veg-div").style.color = tv.header.color;
             document.querySelector(".veg-icon").style.borderColor = tv.header.color;
             document.querySelector(".veg-circle").style.backgroundColor = tv.header.color;
@@ -73,8 +73,9 @@
             // footer
             document.querySelector(".footer right").innerHTML = `${tv.footer.textRight}`;
             document.querySelector(".footer left").innerHTML = `${tv.footer.textLeft}`;
-            document.querySelector(".footer left").style.backgroundColor = tv.header.backgroundColor;
-            document.querySelector(".footer left").style.color = `${tv.header.color}`;
+            document.querySelector(".footer left").style.backgroundColor = tv.allWraps.backgroundColor;
+            document.querySelector(".footer left").style.color = `${tv.allWraps.color}`;
+            document.querySelector(".footer left b").style.color = `${tv.allWraps.price.color}`;
             document.querySelector(".footer").style.fontSize = `${tv.footer.fontSize}rem`;
             document.querySelector(".footer").style.borderBottomColor = tv.header.backgroundColor;
             document.querySelector(".footer").style.lineHeight = `${tv.footer.height}rem`;
@@ -220,21 +221,22 @@
         .footer {
             left: 0%;
             width: 100%;
-            border-bottom: 3px solid transparent;
+            border-bottom: 0px solid transparent;
             padding-left: 1rem;
             padding-right: 1rem;
 
             & left {
                 float: left;
-                padding-left: 1rem;
-                padding-right: 1rem;
+                padding-left: 8rem;
+                padding-right: 8rem;
                 border-top-right-radius: 10px;
                 border-top-left-radius: 10px;
+                font-weight: bold;
 
                 & b {
                     transform: scale(1.3);
                     position: relative;
-                    margin-left: 1rem;
+                    margin-left: 1.3rem;
                     display: inline-block;
                 }
 

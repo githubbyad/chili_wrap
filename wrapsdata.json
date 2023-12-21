@@ -1,5 +1,5 @@
 {
-    "lastModified": "20\/12\/2023, 9:43:08 pm",
+    "lastModified": "21\/12\/2023, 1:01:30 pm",
     "code": "wrap123",
     "general": {
         "logo": {
@@ -76,8 +76,8 @@
             "gap": "5.2"
         },
         "footer": {
-            "textRight": "*Limited Time Offer!",
-            "textLeft": "Add Cheese for <b><i>\u20b9<\/i>10<\/b>",
+            "textRight": "",
+            "textLeft": "Extra Cheese <b><i>\u20b9<\/i>10<\/b>",
             "backgroundColor": "transparent",
             "fontSize": "1.6",
             "color": "#99fe19",
@@ -138,8 +138,8 @@
             "gap": "5.4"
         },
         "footer": {
-            "textRight": "*Limited Time Offer!",
-            "textLeft": "Add Cheese for <b><i>\u20b9<\/i>10<\/b>",
+            "textRight": "",
+            "textLeft": "Extra Cheese <b><i>\u20b9<\/i>10<\/b>",
             "backgroundColor": "transparent",
             "fontSize": "1.6",
             "color": "#99fe19",
